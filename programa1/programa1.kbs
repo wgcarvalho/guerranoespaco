@@ -1,13 +1,13 @@
-print "Digite a mensagem";
+test: print "Digite a mensagem";
 input m$
-let l = len(m$)
+let l = length(m$)
 for n = 1 to l
-let a = asc(mid$(m$,n,1))-1
-print chr$(a);
+let a = asc(mid(m$,n,1))-1
+print chr(a);
 next n
 print
 print "Mais alguma mensagem para decodificar";
 print "responda sim ou não";
 input r$
-if r$ = "sim" then goto 1
-stop
+if r$="sim" then goto test
+	
