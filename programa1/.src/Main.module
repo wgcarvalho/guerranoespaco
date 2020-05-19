@@ -1,0 +1,15 @@
+' Gambas module file
+
+Public Sub Main()
+
+  Dim m, a As String = 100
+  Dim l, n As Integer = 3
+
+Print "Digite a Mensagem"
+Input m 
+Let l = Len(m)
+For n = 1 To l
+  Let a = Asc(Mid$(m, n, 1)) - 1
+  Print Chr$(a);
+Next
+End

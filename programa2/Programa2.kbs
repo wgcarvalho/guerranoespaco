@@ -1,0 +1,16 @@
+let n = 10 
+print "iniciada a contagem regressiva"
+print
+goto4: if n<= 0 then goto goto11
+print "t menos "+n
+let n = n - 1 
+if n> 40 then goto goto14
+for i = 1 to 400
+next i
+goto goto4
+goto11: print "ignicao"
+print "lancamento do foguete foi um sucesso."
+end
+goto14: print "foguete derreteu na rampa de lancamento"
+print "esta foi sua primeira e ultima missao"
+end
